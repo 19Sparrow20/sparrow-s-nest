@@ -1,29 +1,21 @@
-﻿<!DOCTYPE html>
-
+<!DOCTYPE html>
 <html>
-<head>
-    <title>Личный сайт</title>
-    <style>
-        #content {
-            width: 500px; 
-            margin: 0 auto 50px; 
-        }
 
-        #footer {
-            position: fixed;
-            left: 0;
-            bottom: 0; 
-            padding: 10px; 
-            background: #000;
-            color: #fff; 
-            width: 100%; 
-        }
-    </style>
-</head>
-<body>
-    <div id="content">
-    </div>
-            <script>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>My title</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+
+    <body>
+        <div class="main">
+            <h2>JavaScript Confirm Box</h2>
+            <button class="btn" onclick="myFunction()">Try it</button>
+            <ul id="demo">
+
+            </ul>
+        </div>
+        <script>
             function sleep(ms) {
                 return new Promise(resolve => setTimeout(resolve, ms));
             }
@@ -39,9 +31,10 @@
                         el.appendChild(newEl)
                         await sleep(100)
                     }
-    <div id="footer">
-        &copy; Волков Вячеслав
-    </div>
-</body>
-</html>
+                })()
+            }
+        </script>
 
+    </body>
+
+</html>
